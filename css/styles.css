@@ -77,6 +77,22 @@ main{
     border: 2px dashed #cd5e5e;
 }
 
+.center-button{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colored-button {
+    background-color: #0b6122; /* Example color: Dodger Blue */
+    color: #fff; /* Text color (e.g., white) */
+    padding: 30px 75px; /* Optional padding for better appearance */
+    border: solid; /* Optional border styling */
+    border-color: #fff;
+    border-radius: 50px; /* Optional border radius for rounded corners */
+  }
+
 .shelf-name{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
