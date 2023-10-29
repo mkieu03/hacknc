@@ -3,6 +3,7 @@ package com.example.fridge;
 import java.util.Optional;
 import java.util.List;
 
+import com.example.fridge.entity.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -22,7 +23,6 @@ public class ItemController {
         return ItemRepository.findAll();
     }
 
-    
     @GetMapping("/{id}")
     public ResponseEntity<Item> findItemById(@PathVariable(value = "id") long id) {
         Optional<Item> item;
@@ -38,6 +38,7 @@ public class ItemController {
 
      @PostMapping
     public Item saveItem(@Validated @RequestBody Item item) {
+
         return ItemRepository.save(item);
     }
 

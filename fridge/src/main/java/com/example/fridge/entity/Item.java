@@ -1,15 +1,12 @@
-package com.example.fridge;
+package com.example.fridge.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "items")
+@Table(name = "item")
 public class Item {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private double amount;
@@ -17,12 +14,9 @@ public class Item {
     private int expiration_month;
     private int expiration_day;
 
-    public Item(String name, double amount, int expiration_year, int expiration_month, int expiration_day) {
-        this.name = name;
-        this.amount = amount;
-        this.expiration_year = expiration_year;
-        this.expiration_month = expiration_month;
-        this.expiration_day = expiration_day;
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     // Getters and Setters for the fields
