@@ -12,7 +12,7 @@
         <a href="index.html" class="menu-item logo"><img src="img/fridge-icon.png" class="logo" alt="fridge icon"></a>
         <div class="desktop-menu">
             <a href="inventory.html" class="menu-item">Inventory</a>
-            <a href="database.html" class="menu-item">Database</a>
+            <a href="database.html" class="menu-item">, Database</a>
         </div>
     </nav>
 </header>
@@ -64,15 +64,14 @@
           // Display the entered data in a list
           var inventoryList = document.getElementById("inventoryList");
           var listItem = document.createElement("li");
-          listItem.textContent = 
-          `Name: ${nameInput}, 
-          Amount: ${amountInput}, 
-          Expiration Year: ${expYearInput}, 
-          Expiration Month: ${expMonthInput}, 
-          Expiration Day: ${expDayInput}`;
+          listItem.innerHTML = 
+          `Name: ${nameInput}<br> 
+          Amount: ${amountInput}<br>  
+          Expiration Year: ${expYearInput}<br>  
+          Expiration Month: ${expMonthInput}<br>  
+          Expiration Day: ${expDayInput}<br><br> `
           inventoryList.appendChild(listItem);
         }
-      </script>
-    
+      </script> 
 </body>
 </html>
