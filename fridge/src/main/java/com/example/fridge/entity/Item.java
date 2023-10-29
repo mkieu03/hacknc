@@ -1,6 +1,7 @@
 package com.example.fridge.entity;
 
-import javax.persistence.*;
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "item")
