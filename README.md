@@ -1,12 +1,13 @@
-# hacknc
-Fridge Finder Web App
+# Hacknc_2023: Fridge Finder Web App
+
 The Fridge Finder Web App is a simple web application that allows users to input and display items that they want to store in a fridge. It's designed to provide an easy way to keep track of items in your fridge.
 
-Features
+**Features**
 Enter details of items you want to store in your fridge.
 Display the entered item details in a list format.
 Clear the input fields after adding an item to the inventory.
-Getting Started
+
+**Getting Started**
 To use the Fridge Finder Web App, follow these steps:
 
 Clone or download this repository to your local machine.
